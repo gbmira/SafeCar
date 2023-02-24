@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC816490-B3C6-3489-6D63-9270BE195C60" name="T_SC_CONTATO_EMERGENCIA">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>0AD407C0-1B3D-7175-BB8A-B757321632BE</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contato_emergencia" id="68D77DA6-A517-4CAD-7856-889537030EBE">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do contato
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do contato
+]]></commentInRDBMS>
+<generatorID>ABFFE553-B3E9-7449-32D0-CEA1D7927018</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_contato_emergencia" id="353C3F34-DD3E-68EF-90E1-C5AE2E889FFC">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o tipo de contato, policial, ambulatório e entre outros.
+
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o tipo de contato, policial, ambulatório e entre outros.
+
+]]></commentInRDBMS>
+<generatorID>61776996-53D8-8AB8-C321-295495BBB951</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="9E351307-32E3-8896-F3A9-655FD7155C7B">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o número de telefone sem ddd e ddi.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o número de telefone sem ddd e ddi.
+]]></commentInRDBMS>
+<generatorID>F918AD02-62C6-D803-3F86-94C6FD80394E</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>8</beginValue>
+<endValue>9</endValue>
+<description>caracteres minimos para um numero de telefone</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ds_ddd" id="E6B808E2-2DD9-10EC-AF14-DB1914CD3589">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>3B64E397-7BC4-7D42-DBD9-AC4D1DF1D64E</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>3</beginValue>
+<endValue>3</endValue>
+<description>Faixa de carcteres ddd</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ds_ddi" id="A2884E30-42B7-02AD-073D-00D501E0B5D8">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o ddi do telefone
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o ddi do telefone
+]]></commentInRDBMS>
+<generatorID>32916316-DA56-8877-E41A-990066708C82</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>2</beginValue>
+<endValue>3</endValue>
+<description>Faixa de caracteres para ddi</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B740552-A6ED-5498-1D40-15E620626B52" name="T_SC_CONTATO_EMERGENCIA_PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>D09AA769-1668-5F82-0FE1-07E7EBAC3603</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68D77DA6-A517-4CAD-7856-889537030EBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

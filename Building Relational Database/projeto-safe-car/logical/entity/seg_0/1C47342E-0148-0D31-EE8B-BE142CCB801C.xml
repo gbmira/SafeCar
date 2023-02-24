@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C47342E-0148-0D31-EE8B-BE142CCB801C" name="T_SC_PLANO_SAUDE">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:29:39 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_plano_saude" id="EF765066-87C8-66CC-0ED6-0EF2E27EFC5F">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:42:14 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do plano de saúde.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="F9F5872B-89C6-06F4-A11D-38C6896AF3B5">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:04:03 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do usuário.]]></comment>
+<generatorID>57F99C34-4A61-E7DE-7C8B-C43E99575816</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<referedAttribute>3CBE64CE-1B0C-6703-0815-AAF99B31CD7A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_empresa_plano_saude" id="BDA189C2-C4BA-DD1B-F07A-DEC15CD07D24">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:42:30 UTC</createdTime>
+<comment><![CDATA[Responsável por informar a empresa que fornece o plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por informar a empresa que fornece o plano de saúde.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_plano_saude" id="99FB35F5-74BA-D3C7-014C-A1F4EB032148">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:42:52 UTC</createdTime>
+<comment><![CDATA[Responsável pelo nome do plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo nome do plano de saúde.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_plano_saude" id="97370EB5-529E-4C01-BDEB-A0C162683AEA">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:43:06 UTC</createdTime>
+<comment><![CDATA[Responsável pelo tipo de plano de saúde, adulto, infantil, idoso.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo tipo de plano de saúde, adulto, infantil, idoso.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_descricao_plano" id="9EF30904-EA44-AE9B-E52A-49678382D7C6">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:43:22 UTC</createdTime>
+<comment><![CDATA[Responsável pela descrição completa do plano de saúde do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela descrição completa do plano de saúde do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4C96F73-907E-3494-F8C5-E33A5FA1B4EC" name="T_SC_PLANO_SAUDE PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:43:44 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EF765066-87C8-66CC-0ED6-0EF2E27EFC5F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2F072EAF-5CB9-8426-A72A-EBB1F2C5F2D4" name="T_SC_CHAMADO">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:28:24 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_chamado" id="529EB61D-B063-E7DA-7C56-A62E28C90C82">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:46:50 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do chamado]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do chamado]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_veiculo" id="D1DBF24A-87FD-576E-CD42-D416273219CC">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:01:41 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do carro.
+]]></comment>
+<generatorID>14CA9500-14FB-D4F0-6903-F6E3E4EC3E5A</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<referedAttribute>D2963816-4665-F0D3-FDC1-0CE5B9C70B1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_contato_emergencia" id="E2586E0D-DEBF-C741-C633-0357B5160493">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:02:11 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do contato
+]]></comment>
+<generatorID>38DA6E8E-83F8-C3EE-4014-494AF8011604</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<referedAttribute>ABFFE553-B3E9-7449-32D0-CEA1D7927018</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_ocorrencia" id="D804029A-5022-F1D8-9451-E6BD4C4C506B">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:47:34 UTC</createdTime>
+<comment><![CDATA[esponsável pelo tipo de ocorrência do chamado exp: dormindo no volante
+]]></comment>
+<commentInRDBMS><![CDATA[esponsável pelo tipo de ocorrência do chamado exp: dormindo no volante
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_grau_ocorrencia" id="1164974D-58DE-31BD-70FB-D4A74FF1A587">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:48:13 UTC</createdTime>
+<comment><![CDATA[Grau da ocorrência identificado pelo sistema.
+]]></comment>
+<commentInRDBMS><![CDATA[Grau da ocorrência identificado pelo sistema.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loc_ocorrencia" id="0CE7E649-9437-CA35-0AB9-72FC2BA7F95D">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:48:35 UTC</createdTime>
+<comment><![CDATA[Descrição das localizações da ocorrência, para um atendimento mais preciso
+]]></comment>
+<commentInRDBMS><![CDATA[Descrição das localizações da ocorrência, para um atendimento mais preciso
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_cordenadas" id="DCCF9C48-2230-CFED-D626-BA4BD79CA364">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:48:55 UTC</createdTime>
+<comment><![CDATA[Descrição das coordenadas onde o veículo foi visto pela última vez.
+]]></comment>
+<commentInRDBMS><![CDATA[Descrição das coordenadas onde o veículo foi visto pela última vez.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_chamado" id="E6EEA8A6-E5D3-52E9-3C1B-FF3A6FE31CD1">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:57:00 UTC</createdTime>
+<comment><![CDATA[ Dados do dia no qual o chamado foi realizado
+]]></comment>
+<commentInRDBMS><![CDATA[ Dados do dia no qual o chamado foi realizado
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6FC962C-EE5C-A8FA-D84D-9D8F0E5286E8" name="T_SC_CHAMADO PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:47:31 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>529EB61D-B063-E7DA-7C56-A62E28C90C82</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

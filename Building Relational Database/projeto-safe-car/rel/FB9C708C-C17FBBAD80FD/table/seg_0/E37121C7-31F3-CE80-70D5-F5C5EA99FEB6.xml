@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E37121C7-31F3-CE80-70D5-F5C5EA99FEB6" name="T_SC_UND_HOSPITALAR">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>154F4B1E-8557-0C14-C12B-E50F85D46DBE</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_und_hospitalar" id="82F3B250-F390-6D2C-6C73-1F8E79735793">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pelo id da unidade hospitalar]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo id da unidade hospitalar
+]]></commentInRDBMS>
+<generatorID>8544CF8D-25F9-BA10-137C-71B0E5637932</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_plano_saude" id="7A9EF36D-684A-75C8-A605-DCC8B6347997">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do plano de saúde.
+]]></comment>
+<generatorID>D0295B0F-94D7-8037-71F4-BB184457045E</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9DEB736-4050-C296-B134-F81C46D4F223" referredColumn="B7C16C73-7A3F-FA3E-652E-AED5237EF59D"/>
+</associations>
+</Column>
+<Column name="nm_und_hospitalar" id="1EEFAB45-B6AB-C9DC-CE1E-5FB2957746C3">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pelo nome da unidade]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo nome da unidade]]></commentInRDBMS>
+<generatorID>EC5FC7F3-A2C0-D08C-AB8D-994CF5491398</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_endereco_unidade" id="23934026-264C-03A1-31CF-64501CF75D1C">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[ Responsavel pelo endereço
+]]></comment>
+<commentInRDBMS><![CDATA[ Responsavel pelo endereço
+]]></commentInRDBMS>
+<generatorID>CD67D9A9-F6AE-FEE4-2DDB-32B61B81FB49</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cep_unidade" id="EBE98C73-4B5B-26EC-410D-DAA9772E953B">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[ Responsável pelo cep da unidade
+]]></comment>
+<commentInRDBMS><![CDATA[ Responsável pelo cep da unidade
+]]></commentInRDBMS>
+<generatorID>B16CBA7F-93B8-CCFE-802B-AEE2C0AA3984</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cidade" id="3A16C6E9-2031-E010-15B7-D23501158B6C">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsavel pela cidade do endereço
+]]></comment>
+<commentInRDBMS><![CDATA[Responsavel pela cidade do endereço
+]]></commentInRDBMS>
+<generatorID>A23FB87B-B95C-B495-9638-1CA93F4AC23B</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_logradouro" id="8B41EED1-9202-E341-0C0D-EFED22A1A062">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[ Responsável pelo logradouro do endereço]]></comment>
+<commentInRDBMS><![CDATA[ Responsável pelo logradouro do endereço]]></commentInRDBMS>
+<generatorID>B4CA6CD4-48CA-74F0-3C11-09EF9EA83DC3</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_numero" id="E8ED39C4-7151-73C7-8B88-C117264BE74C">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsavel pelo número do endereço]]></comment>
+<commentInRDBMS><![CDATA[Responsavel pelo número do endereço]]></commentInRDBMS>
+<generatorID>7F32EB20-CFD1-9351-1104-EB253EDB93E1</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_estado" id="3744B6FF-EB16-3F14-26E2-078EC53722B9">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pelo estado do endereço]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo estado do endereço]]></commentInRDBMS>
+<generatorID>88698613-96CD-AAC9-BD50-CF3FDEB43D58</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="466145CC-8228-6A9F-FF32-4B09AE993DB1" name="T_SC_UND_HOSPITALAR_PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>337332F3-16E4-8559-75CF-F79CCDD9E836</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82F3B250-F390-6D2C-6C73-1F8E79735793"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B505256-9EF4-B307-8243-BCDCC92659A7" name="Relation_8">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>3E0340EC-762C-DF3C-8205-C20A8DF13370</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A9EF36D-684A-75C8-A605-DCC8B6347997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

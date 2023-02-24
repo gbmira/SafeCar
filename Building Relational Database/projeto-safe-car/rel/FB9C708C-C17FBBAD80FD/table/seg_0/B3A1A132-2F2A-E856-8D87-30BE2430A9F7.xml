@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3A1A132-2F2A-E856-8D87-30BE2430A9F7" name="T_SC_CHAMADO">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>2F072EAF-5CB9-8426-A72A-EBB1F2C5F2D4</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_chamado" id="E46FF74E-DF7A-CAC8-C5FB-4E27021BC68F">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do chamado]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do chamado]]></commentInRDBMS>
+<generatorID>529EB61D-B063-E7DA-7C56-A62E28C90C82</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_veiculo" id="6BA91806-C6A7-0627-0F39-F0F084DE9ACB">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do carro.
+]]></comment>
+<generatorID>D1DBF24A-87FD-576E-CD42-D416273219CC</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBF289B7-C642-FA97-FA3C-5140FECAD532" referredColumn="778AFB13-22D8-A113-BED1-BC64968EA603"/>
+</associations>
+</Column>
+<Column name="id_contato_emergencia" id="B30FA605-5326-FB7D-960A-C81D1670DD49">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do contato
+]]></comment>
+<generatorID>E2586E0D-DEBF-C741-C633-0357B5160493</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A31FC74C-6D80-122D-3691-95F74A00E445" referredColumn="68D77DA6-A517-4CAD-7856-889537030EBE"/>
+</associations>
+</Column>
+<Column name="tp_ocorrencia" id="136AB3D7-3362-0813-CC70-2CC15826B78F">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[esponsável pelo tipo de ocorrência do chamado exp: dormindo no volante
+]]></comment>
+<commentInRDBMS><![CDATA[esponsável pelo tipo de ocorrência do chamado exp: dormindo no volante
+]]></commentInRDBMS>
+<generatorID>D804029A-5022-F1D8-9451-E6BD4C4C506B</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_grau_ocorrencia" id="87E5B929-3924-F137-1DAA-7F0E5CE563C9">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Grau da ocorrência identificado pelo sistema.
+]]></comment>
+<commentInRDBMS><![CDATA[Grau da ocorrência identificado pelo sistema.
+]]></commentInRDBMS>
+<generatorID>1164974D-58DE-31BD-70FB-D4A74FF1A587</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loc_ocorrencia" id="AF047011-259F-71C0-21E3-B324E04E98F9">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Descrição das localizações da ocorrência, para um atendimento mais preciso
+]]></comment>
+<commentInRDBMS><![CDATA[Descrição das localizações da ocorrência, para um atendimento mais preciso
+]]></commentInRDBMS>
+<generatorID>0CE7E649-9437-CA35-0AB9-72FC2BA7F95D</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cordenadas" id="31D5CD8B-B136-B168-7949-C4A66C5C63B9">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Descrição das coordenadas onde o veículo foi visto pela última vez.
+]]></comment>
+<commentInRDBMS><![CDATA[Descrição das coordenadas onde o veículo foi visto pela última vez.
+]]></commentInRDBMS>
+<generatorID>DCCF9C48-2230-CFED-D626-BA4BD79CA364</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_chamado" id="F56713B6-D572-48F9-35F3-061553F6C4CF">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[ Dados do dia no qual o chamado foi realizado
+]]></comment>
+<commentInRDBMS><![CDATA[ Dados do dia no qual o chamado foi realizado
+]]></commentInRDBMS>
+<generatorID>E6EEA8A6-E5D3-52E9-3C1B-FF3A6FE31CD1</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="687F5C85-108A-1C7D-B353-F9739A0122A7" name="T_SC_CHAMADO_PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>D6FC962C-EE5C-A8FA-D84D-9D8F0E5286E8</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E46FF74E-DF7A-CAC8-C5FB-4E27021BC68F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BED77109-DF1D-AED0-5796-B896621B3527" name="Relation_2">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>14CA9500-14FB-D4F0-6903-F6E3E4EC3E5A</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA91806-C6A7-0627-0F39-F0F084DE9ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07DE8B3B-7959-1B67-D09B-2938F99047C0" name="Relation_3">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>38DA6E8E-83F8-C3EE-4014-494AF8011604</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B30FA605-5326-FB7D-960A-C81D1670DD49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

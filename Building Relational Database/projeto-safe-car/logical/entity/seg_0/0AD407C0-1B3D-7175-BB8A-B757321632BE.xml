@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AD407C0-1B3D-7175-BB8A-B757321632BE" name="T_SC_CONTATO_EMERGENCIA">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:28:37 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contato_emergencia" id="ABFFE553-B3E9-7449-32D0-CEA1D7927018">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:00:32 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do contato
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do contato
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_contato_emergencia" id="61776996-53D8-8AB8-C321-295495BBB951">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:00:32 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o tipo de contato, policial, ambulatório e entre outros.
+
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o tipo de contato, policial, ambulatório e entre outros.
+
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="F918AD02-62C6-D803-3F86-94C6FD80394E">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:25:26 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o número de telefone sem ddd e ddi.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o número de telefone sem ddd e ddi.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>8</beginValue>
+<endValue>9</endValue>
+<description>caracteres minimos para um numero de telefone</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ds_ddd" id="3B64E397-7BC4-7D42-DBD9-AC4D1DF1D64E">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:25:26 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>3</beginValue>
+<endValue>3</endValue>
+<description>Faixa de carcteres ddd</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ds_ddi" id="32916316-DA56-8877-E41A-990066708C82">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:25:26 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o ddi do telefone
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o ddi do telefone
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>2</beginValue>
+<endValue>3</endValue>
+<description>Faixa de caracteres para ddi</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D09AA769-1668-5F82-0FE1-07E7EBAC3603" name="T_SC_CONTATO_EMERGENCIA PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:02:10 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="56BAE475-5062-4120-2DEE-2D738AD071D6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ABFFE553-B3E9-7449-32D0-CEA1D7927018</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,257 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8899D7FB-8E7E-0725-4417-9664D5278B4D" name="T_SC_USUARIO">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:29:00 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="3CBE64CE-1B0C-6703-0815-AAF99B31CD7A">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:33:49 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do usuário.]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar a identificação do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_veiculo" id="100A92FA-C189-8868-55E1-1AB594F66687">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 15:02:38 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do carro.
+]]></comment>
+<generatorID>6A50228B-3D66-9530-3514-B949C3B039DF</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<referedAttribute>D2963816-4665-F0D3-FDC1-0CE5B9C70B1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_usuario" id="331B6140-D543-EFAC-41D8-AF63BFA58565">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:34:37 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o nome do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o nome do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_idade_usuario" id="8EB31D0A-94CB-2E73-F863-4B0BC5BAC0B5">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:34:51 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a idade do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar a idade do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<constraintName>CK_SC_USUARIO_IDADE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>130</endValue>
+<description>Faixa de idade possivel</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ds_profissao_usuario" id="A8CCCDB5-8110-575A-7D0B-5778E3169116">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:37:05 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a profissão atual do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar a profissão atual do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_salario_usuario" id="F5D47887-C5E4-BA14-69A8-E1B921F6FDBA">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:37:19 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o salário do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o salário do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_raca_usuario" id="FF59F91D-F762-AB8D-A46B-27F967AA42A4">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:37:43 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a raça do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar a raça do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_genero" id="7A508031-6069-3301-E6DE-3A93B6AAE2AB">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:38:05 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o gênero do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o gênero do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<constraintName>CK_SC_USUARIO_GENERO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Feminino"/>
+<valueDef value="M" description="Masculino"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_nacionalidade" id="1754DB13-0AC0-CA1E-E19E-E4B1704DA826">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:38:25 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a nacionalidade do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar a nacionalidade do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_sanguinio" id="2E5FB145-BDA6-2679-4C03-01288C2CC550">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:38:44 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar o tipo sanguíneo do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por armazenar o tipo sanguíneo do usuário.
+]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<constraintName>CK_SC_USUARIO_TP_SANGUINEO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="A+" description="tipo sanguineo"/>
+<valueDef value="A-" description="tipo sanguineo"/>
+<valueDef value="AB+" description="tipo sanguineo"/>
+<valueDef value="AB-" description="tipo sanguineo"/>
+<valueDef value="B+" description="tipo sanguineo"/>
+<valueDef value="B-" description="tipo sanguineo"/>
+<valueDef value="O+" description="tipo sanguineo"/>
+<valueDef value="O-" description="tipo sanguineo"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_login" id="C4EA5427-0FAE-0947-8B24-1AB05C17C67A">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:13:53 UTC</createdTime>
+<comment><![CDATA[Atributo responsavel pelo login do usuario]]></comment>
+<commentInRDBMS><![CDATA[Atributo responsavel pelo login do usuario]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_senha" id="7E9C45B5-BB53-E268-65DC-E826CF01F25C">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:14:15 UTC</createdTime>
+<comment><![CDATA[Atributo responsavel pela senha do usuario]]></comment>
+<commentInRDBMS><![CDATA[Atributo responsavel pela senha do usuario]]></commentInRDBMS>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C9A576EE-4A34-FD68-EA94-417C6BF60374" name="T_SC_USUARIO PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 14:34:21 UTC</createdTime>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<engineerTo>
+<item key="FB9C708C-8CB7-EE1B-4393-C17FBBAD80FD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3CBE64CE-1B0C-6703-0815-AAF99B31CD7A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

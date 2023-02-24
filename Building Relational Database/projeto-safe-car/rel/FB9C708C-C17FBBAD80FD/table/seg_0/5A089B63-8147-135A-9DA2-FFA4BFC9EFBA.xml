@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A089B63-8147-135A-9DA2-FFA4BFC9EFBA" name="T_SC_PLANO_SAUDE">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>1C47342E-0148-0D31-EE8B-BE142CCB801C</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_plano_saude" id="B7C16C73-7A3F-FA3E-652E-AED5237EF59D">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela identificação do plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela identificação do plano de saúde.
+]]></commentInRDBMS>
+<generatorID>EF765066-87C8-66CC-0ED6-0EF2E27EFC5F</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="082CBC41-53F2-BC81-E2B3-541A80328829">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por armazenar a identificação do usuário.]]></comment>
+<generatorID>F9F5872B-89C6-06F4-A11D-38C6896AF3B5</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A285E1C0-C0F5-80BB-CB91-25CBF0529FC6" referredColumn="CA29DC1B-194C-8351-C94C-167DAADD22FC"/>
+</associations>
+</Column>
+<Column name="ds_empresa_plano_saude" id="586072DC-6251-D714-A932-6991C22EDED4">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável por informar a empresa que fornece o plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável por informar a empresa que fornece o plano de saúde.
+]]></commentInRDBMS>
+<generatorID>BDA189C2-C4BA-DD1B-F07A-DEC15CD07D24</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_plano_saude" id="B33C9DFC-DC89-1546-C922-B0B302BAB8D8">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pelo nome do plano de saúde.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo nome do plano de saúde.
+]]></commentInRDBMS>
+<generatorID>99FB35F5-74BA-D3C7-014C-A1F4EB032148</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_plano_saude" id="FE27AB4D-FF9F-4503-1AE6-49B33EA71369">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pelo tipo de plano de saúde, adulto, infantil, idoso.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pelo tipo de plano de saúde, adulto, infantil, idoso.
+]]></commentInRDBMS>
+<generatorID>97370EB5-529E-4C01-BDEB-A0C162683AEA</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_descricao_plano" id="132936DF-F2EF-FDE9-A22C-87861D9B018E">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<comment><![CDATA[Responsável pela descrição completa do plano de saúde do usuário.
+]]></comment>
+<commentInRDBMS><![CDATA[Responsável pela descrição completa do plano de saúde do usuário.
+]]></commentInRDBMS>
+<generatorID>9EF30904-EA44-AE9B-E52A-49678382D7C6</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09E1826B-3D3B-F03C-D277-DA03C794B6E4" name="T_SC_PLANO_SAUDE_PK">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>B4C96F73-907E-3494-F8C5-E33A5FA1B4EC</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7C16C73-7A3F-FA3E-652E-AED5237EF59D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="123888D1-3B61-602C-00FA-9449F2CEC87E" name="Relation_7">
+<createdBy>Jhonatas Dev</createdBy>
+<createdTime>2022-10-31 17:15:46 UTC</createdTime>
+<generatorID>57F99C34-4A61-E7DE-7C8B-C43E99575816</generatorID>
+<ownerDesignName>projeto-safe-car</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="082CBC41-53F2-BC81-E2B3-541A80328829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,4 @@
+Nós escolhemos entregar 2 projetos na materia de Domain Driven Design.
+O case especifica que ou usamos a API na entrega com tudo funcionando OU um Menu em java.
+- Nossa equipe optou por entregar tanto a API com tudo completo, quanto um Menu de escopo reduzido.
+- O video Pitch de java explica os 2 projetos!!!!!!
